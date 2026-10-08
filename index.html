@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Be My Local Friend in Jabodetabek: a local friend to explore Jakarta, Bogor and Tangerang with. IMFOO OFFICIAL."><meta name="theme-color" content="#2a1f6b"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%9B%B5%3C/text%3E%3C/svg%3E">
+<title>Be My Local Friend in Jabodetabek | IMFOO OFFICIAL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1b4b;--mute:#5b5a7a;--bg:#cdc8c3;--frame:#f6f4fc;--glass:rgba(255,255,255,.66);--line:rgba(29,27,75,.13);--acc:#2a1f6b;--warm:#f08a4b;--ov:rgba(246,244,252,.5);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#efeefc;--mute:#b2b0d4;--bg:#12102a;--frame:#1d1a3d;--glass:rgba(40,36,82,.66);--line:rgba(255,255,255,.14);--acc:#8d7dff;--ov:rgba(18,16,42,.72)}}
+:root[data-theme="dark"]{--ink:#efeefc;--mute:#b2b0d4;--bg:#12102a;--frame:#1d1a3d;--glass:rgba(40,36,82,.66);--line:rgba(255,255,255,.14);--acc:#8d7dff;--ov:rgba(18,16,42,.72)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;color:var(--ink);font-family:Outfit,system-ui,"Noto Sans SC","Noto Sans KR","Noto Sans JP",sans-serif;line-height:1.6;background:linear-gradient(var(--ov),var(--ov)),var(--bgimg,none) center/cover fixed no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='none'%3E%3Cpath d='M0 140C200 40 400 220 620 130S1000 40 1200 150V0H0Z' fill='%23a08cf0' fill-opacity='.16'/%3E%3Cpath d='M0 720C250 600 450 790 700 690S1050 620 1200 720V800H0Z' fill='%23f08a4b' fill-opacity='.12'/%3E%3C/svg%3E") center/cover fixed no-repeat,radial-gradient(ellipse at 15% 0,rgba(255,255,255,.45),transparent 55%),var(--bg)}
+.wrap{max-width:1160px;margin:0 auto;padding:16px 16px 110px}
+@media (min-width:861px){.wrap{padding:16px 88px 90px}}
+.glass{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:46px 22px 46px 22px;padding:26px;text-align:center}
+.hero{position:relative;min-height:660px;border:7px solid var(--frame);border-radius:72px;overflow:hidden;background:linear-gradient(180deg,#6f8fd0 0%,#a9a6dc 38%,#e9b3a6 70%,#f2cfba 100%);color:#fff;display:flex;flex-direction:column;box-shadow:0 24px 70px rgba(29,27,75,.22)}
+.scene{position:absolute;left:0;bottom:0;width:100%;height:58%}
+.hero>*:not(.scene){position:relative;z-index:2}
+.top{display:flex;gap:10px;justify-content:space-between;align-items:center;padding:16px}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--frame);color:var(--ink);border:0;border-radius:999px;padding:13px 26px;font:500 15px Outfit,sans-serif;text-decoration:none;cursor:pointer;letter-spacing:.02em}
+.pill.dark{background:var(--acc);color:#fff}
+.pill.w{width:100%}
+.lang{display:inline-flex;align-items:center;background:var(--frame);border-radius:999px;padding:0 14px 0 20px;gap:4px}
+.lang select{appearance:none;-webkit-appearance:none;background:transparent;border:0;color:var(--ink);font:500 15px Outfit,system-ui,sans-serif;padding:13px 4px;cursor:pointer;width:auto}
+.lang select option{background:var(--frame);color:var(--ink)}
+.meta{position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--frame);color:var(--ink);border-radius:0 0 38px 38px;padding:16px 38px 14px;font-size:12px;display:flex;gap:30px;text-align:center}
+.meta b{display:block;font-size:15px;font-weight:600}
+.meta::before,.meta::after,.c-left::before,.c-left::after{content:"";position:absolute;width:36px;height:36px;pointer-events:none}
+.meta::before{left:-36px;top:0;background:radial-gradient(circle at 0 100%,transparent 35px,var(--frame) 36px)}
+.meta::after{right:-36px;top:0;background:radial-gradient(circle at 100% 100%,transparent 35px,var(--frame) 36px)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,.opt input:focus-visible+span{outline:3px solid var(--warm);outline-offset:2px}
+.hero h1{margin:52px 0 0;text-align:center;font-weight:500;font-size:clamp(46px,9.5vw,112px);line-height:1;letter-spacing:-.02em;color:rgba(255,255,255,.74);white-space:pre-line}
+.hero .lead{margin:24px auto 0;max-width:430px;padding:0 20px;text-align:center;font-size:15px;color:rgba(255,255,255,.94)}
+.hero .glass{position:absolute;width:310px;color:var(--ink);padding:24px 26px}
+.hero .c-left{left:104px;bottom:0;width:340px;background:var(--frame);border:0;border-radius:44px 44px 0 0;backdrop-filter:none;-webkit-backdrop-filter:none;padding:24px 28px 26px}
+.c-left::before{left:-36px;bottom:0;background:radial-gradient(circle at 0 0,transparent 35px,var(--frame) 36px)}
+.c-left::after{right:-36px;bottom:0;background:radial-gradient(circle at 100% 0,transparent 35px,var(--frame) 36px)}
+.c-right{right:26px;bottom:96px;border-radius:56px 26px 56px 26px}
+.big{font-size:42px;font-weight:600;line-height:1;margin:10px 0 12px}
+.stack{display:flex;align-items:center;justify-content:center}
+.stack span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;margin-left:-8px;border:2px solid var(--frame);font-weight:600;color:#fff;font-size:14px}
+.stack span:first-child{margin-left:0}
+.go{width:42px;height:42px;border-radius:50%;background:var(--frame);color:var(--ink);display:grid;place-items:center;text-decoration:none;border:1px solid var(--line);flex:none}
+.hero .badge{position:absolute;z-index:3;left:50%;bottom:30px;transform:translateX(-50%);width:76px;height:76px;border-radius:50%;background:#2a1f6b;color:#fff;display:grid;place-items:center;font-weight:600;font-size:28px;border:4px solid rgba(255,255,255,.85)}
+.row{display:flex;gap:10px;align-items:center;justify-content:center}
+.stats{font-size:13px;color:var(--mute);margin:6px 0 14px}
+nav.side{position:fixed;left:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:30;background:rgba(255,255,255,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:8px;box-shadow:0 8px 30px rgba(29,27,75,.18)}
+nav.side a,nav.side button{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#1d1b4b;text-decoration:none;font-size:18px;background:none;border:0;cursor:pointer;font-family:inherit;overflow:hidden}
+nav.side a:hover,nav.side button:hover{background:#2a1f6b;color:#fff}
+nav.side img{width:100%;height:100%;object-fit:cover}
+section{margin-top:72px}
+h2{font-size:clamp(28px,4vw,40px);font-weight:500;margin:0 0 8px;letter-spacing:-.01em;text-align:center}
+h3{margin:0 0 8px;font-size:20px;font-weight:500}
+.sub{color:var(--mute);margin:0 auto 30px;max-width:62ch;text-align:center}
+.note{font-size:14px;color:var(--mute);margin:6px 0}
+.g3,.g4,.g6,.g2{display:grid;gap:16px;align-items:stretch}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(3,1fr)}
+.g6{grid-template-columns:repeat(6,1fr);gap:12px}
+.g2{grid-template-columns:1.15fr 1fr}
+.svc{display:flex;flex-direction:column}
+ul.clean{list-style:none;margin:10px 0 0;padding:0;color:var(--mute);flex:1;display:flex;flex-direction:column;justify-content:center}
+ul.clean li{padding:8px 0;border-top:1px solid var(--line)}
+ul.clean li:first-child{border-top:0}
+.tap{cursor:pointer;font:inherit;color:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;transition:transform .2s}
+.tap:hover{transform:translateY(-4px)}
+.city .dot{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:26px;font-weight:600;margin-bottom:6px}
+.city small{color:var(--acc);font-weight:500}
+.chipgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.fbtn{padding:16px 26px;border-radius:999px 26px 999px 26px;font-weight:500}
+.price{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:22px 8px;min-height:120px;color:var(--mute)}
+.price b{font-size:32px;font-weight:600;color:var(--acc);line-height:1.1}
+label.l{display:block;font-size:14px;color:var(--mute);margin:14px 0 4px;text-align:left}
+input[type=text],input[type=number],textarea,select.f{width:100%;font:inherit;color:var(--ink);background:var(--frame);border:1px solid var(--line);border-radius:18px;padding:12px 14px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;top:0;left:0;right:0;bottom:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt span{display:block;border:1px solid var(--line);background:var(--frame);border-radius:999px;padding:9px 16px;font-size:14px}
+.opt input:checked+span{background:var(--acc);color:#fff;border-color:var(--acc)}
+.ctc{display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.crow{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:999px 28px 999px 28px;background:var(--frame);border:1px solid var(--line);color:var(--ink);text-decoration:none;text-align:left}
+.crow:hover{border-color:var(--acc)}
+.crow .ci{flex:none;width:44px;height:44px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-weight:600}
+.crow b{display:block;font-weight:500}
+.crow small{color:var(--mute);word-break:break-all}
+.fee{font-size:32px;font-weight:600;color:var(--acc)}
+.stk{display:flex;flex-direction:column;justify-content:center}
+.prof{display:flex;gap:32px;align-items:center;justify-content:center;text-align:left;padding:34px 40px}
+.ava{flex:none;width:170px;height:170px;border-radius:58% 42% 55% 45%/50% 56% 44% 50%;background:linear-gradient(135deg,#f08a4b,#a08cf0);overflow:hidden}
+.ava img{width:100%;height:100%;object-fit:cover}
+.prof h2{text-align:left}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.chip{background:var(--frame);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.was{color:var(--mute);text-decoration:line-through;font-weight:400;font-size:17px}
+em.off{font-style:normal;font-size:12px;font-weight:600;background:var(--warm);color:#fff;border-radius:999px;padding:2px 10px;vertical-align:middle;margin-left:6px}
+.price em.off{margin:6px 0 0}
+.price b.pw{font-size:38px;color:var(--warm)}
+.tw{position:relative}
+.del{position:absolute;top:12px;right:12px;border:0;border-radius:999px;background:rgba(29,27,75,.82);color:#fff;padding:7px 14px;cursor:pointer;font:inherit;font-size:13px}
+.cal{background:var(--frame);border:1px solid var(--line);border-radius:26px 14px 26px 14px;padding:14px}
+.calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.calnav{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--glass);color:var(--ink);font-size:20px;line-height:1;cursor:pointer}
+.calnav:disabled{opacity:.35;cursor:default}
+.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.calwd{font-size:12px;color:var(--mute);padding:4px 0}
+.calday{min-height:40px;border:0;border-radius:12px;background:transparent;color:var(--ink);font:inherit;font-size:15px;cursor:pointer;padding:0}
+.calday:hover:not(:disabled){background:var(--glass)}
+.calday.sel{background:var(--acc);color:#fff}
+.calday:disabled{opacity:.3;cursor:not-allowed}
+.calday.bk{background:rgba(200,64,46,.18);color:#c8402e;text-decoration:line-through}
+.calday.bk:disabled{opacity:.75}
+.stagein{flex:1;display:flex;flex-direction:column;gap:8px;min-width:0}
+.stagein input{width:100%}
+.cap{text-align:center;margin-top:8px;font-size:15px;font-weight:500;color:var(--ink)}
+.caprow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.caprow input{flex:1 1 40%;min-width:0;padding:9px 12px}
+.capsave{border:0;border-radius:999px;background:var(--acc);color:#fff;padding:0 16px;font:inherit;font-size:14px;cursor:pointer}
+.stage{margin-bottom:18px;text-align:left}
+.stagerow{display:flex;gap:12px;align-items:center;margin:10px 0}
+.stagerow img{width:72px;height:72px;object-fit:cover;border-radius:18px;flex:none}
+.stagerow input{flex:1;min-width:0}
+.tile{width:100%;padding:0;border:0;background:none;cursor:pointer;aspect-ratio:1;overflow:hidden;border-radius:46px 22px 46px 22px}
+.tw:nth-child(even) .tile{border-radius:22px 46px 22px 46px}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:220px;color:var(--mute)}
+.empty .ico{font-size:40px;color:var(--warm);line-height:1}
+.review{display:flex;gap:14px;border-top:1px solid var(--line);padding:16px 0;text-align:left}
+.review:first-child{border-top:0;padding-top:0}
+.review .ph{flex:none;width:84px;height:84px;border-radius:26px 14px 26px 14px;overflow:hidden;background:var(--frame);display:grid;place-items:center;font-size:30px;font-weight:600;color:var(--acc)}
+.review .ph img{width:100%;height:100%;object-fit:cover}
+.stars{color:var(--warm);letter-spacing:2px}
+#prev{display:none;width:96px;height:96px;object-fit:cover;border-radius:20px;margin:8px auto 0}
+.link{background:none;border:0;color:var(--acc);font:inherit;cursor:pointer;text-decoration:underline;padding:0}
+footer{margin-top:72px;text-align:center;color:var(--mute);font-size:14px;letter-spacing:.04em}
+dialog{border:0;padding:0;background:transparent;width:min(640px,92vw);max-height:86vh;max-height:86dvh;color:var(--ink);overflow:visible}
+dialog::backdrop{background:rgba(29,27,75,.5);backdrop-filter:blur(4px)}
+.dbox{position:relative;background:var(--frame);border-radius:56px 28px 56px 28px;padding:34px 30px 30px;max-height:84vh;max-height:84dvh;overflow:auto;text-align:center}
+.x{position:absolute;top:14px;right:18px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--glass);color:var(--ink);font-size:16px;cursor:pointer}
+.item{display:flex;gap:12px;align-items:center;text-align:left;padding:12px 0;border-top:1px solid var(--line)}
+.thumbs{display:flex;flex-direction:column;gap:6px;flex:none}
+.th{width:84px;height:84px;object-fit:cover;border-radius:18px;cursor:zoom-in;display:block}
+.itx{min-width:0}
+.item b{display:block;font-weight:500}
+.item span{color:var(--mute);font-size:14px}
+.sp{display:block;width:100%;border-radius:30px 14px 30px 14px;margin-bottom:12px;cursor:zoom-in}
+.spot{text-align:left;padding:16px 0;border-top:1px solid var(--line)}
+.spot:first-child{border-top:0;padding-top:4px}
+.spot>b{display:block;font-weight:500;font-size:18px}
+.spot p{margin:4px 0 8px;color:var(--mute);font-size:15px}
+.mi{font-size:14px;margin-top:4px;color:var(--ink)}
+.exp{margin-top:10px;font-size:13px;color:var(--acc);font-weight:500}
+.xl{margin:4px 0 0;padding-left:18px;color:var(--mute);font-size:14px}
+.xl b{font-weight:500;color:var(--ink)}
+#lb img{display:block;width:100%;max-height:78vh;object-fit:contain;border-radius:32px}
+@media (max-width:860px){
+ .g3,.g2{grid-template-columns:1fr}
+ .g4{grid-template-columns:1fr 1fr}
+ .g4>:last-child:nth-child(odd){grid-column:1/-1}
+ .g6{grid-template-columns:repeat(2,1fr)}
+ .gal{grid-template-columns:1fr 1fr}
+ .meta,.hero .badge{display:none}
+ .hero{min-height:0;border-radius:44px}
+ .hero h1{margin-top:36px}
+ .hero .glass{position:relative;width:auto;left:auto;right:auto;bottom:auto;margin:12px 14px 0}
+ .hero .c-left{background:var(--glass);border-radius:46px 22px 46px 22px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);margin-top:220px}
+ .c-left::before,.c-left::after{display:none}
+ .hero .c-left{margin-bottom:14px}
+ nav.side{top:auto;bottom:calc(10px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);flex-direction:row}
+ nav.side .me{display:none}
+ nav.side a,nav.side button{width:40px;height:40px}
+ .prof{flex-direction:column;text-align:center;padding:28px 22px}
+ .prof h2{text-align:center}
+ .chips{justify-content:center}
+ body{background-attachment:scroll}
+ .top{flex-wrap:wrap;gap:8px;padding:12px}
+ .pill{padding:11px 16px;font-size:14px}
+ .top .pill{white-space:nowrap}
+ .lang{padding:0 10px 0 14px}
+ .lang select{font-size:16px;padding:11px 2px;width:104px}
+ .glass{padding:22px 18px}
+ .hero .glass{padding:22px 20px}
+ .opt span{padding:11px 16px}
+ .dbox{padding:30px 18px 22px}
+ .x{top:10px;right:12px}
+ .crow{padding:12px 14px}
+ .price{min-height:104px}
+ .price b{font-size:28px}
+ .gal{gap:10px}
+ .stagerow{align-items:stretch}
+ .hero .lead{font-size:14px}
+}
+@media (max-width:400px){
+ .pill{padding:10px 12px;font-size:13px}
+ .lang{padding:0 8px 0 12px}
+ .lang select{width:86px;padding:10px 2px}
+ .glass{padding:20px 14px}
+ .hero .glass{padding:20px 16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tap{transition:none}}
+</style>
+</head>
+<body>
+<nav class="side" aria-label="Sections">
+ <a class="me" href="#profile" title="Imas" aria-label="Imas"><img id="navAva" alt=""></a>
+ <a href="#top" title="Home" aria-label="Home">⌂</a>
+ <a href="#services" title="Services" aria-label="Services">✦</a>
+ <a href="#rates" title="Rates" aria-label="Rates">$</a>
+ <a href="#book" title="Book" aria-label="Book">✉</a>
+ <a href="#gallery" title="Gallery" aria-label="Gallery">▦</a>
+ <a href="#reviews" title="Reviews" aria-label="Reviews">★</a>
+ <button id="theme" title="Light or dark" aria-label="Switch light or dark mode">◐</button>
+</nav>
+
+<div class="wrap" id="top">
+ <header class="hero">
+  <svg class="scene" viewBox="0 0 800 340" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+   <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6efe9"/><stop offset="1" stop-color="#c9c4dc"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#b3bbe6"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff9a52"/><stop offset="1" stop-color="#ffd08a"/></linearGradient>
+   </defs>
+   <path d="M0 160h40v-40h30v40h30v-70h26v70h40v-30h36v30h54v-20h30v20h60v-90h6v-34h4v34h6v90h54v-45h40v45h50v-60h30v60h80v-30h40v30h80v-12h44V340H0z" fill="#8c86bf" opacity=".4"/>
+   <path d="M0 255Q200 228 400 244T800 236V340H0z" fill="url(#g1)"/>
+   <path d="M30 302C30 262 110 244 220 242C330 240 380 262 480 262C600 262 680 236 780 250C800 254 800 300 790 308C770 326 700 326 600 326L110 326C60 326 30 320 30 302Z" fill="url(#g2)"/>
+   <path d="M330 252C350 190 440 160 540 158C650 156 760 190 792 258C700 240 620 262 480 262C400 262 340 264 330 252Z" fill="url(#g2)"/>
+   <path d="M385 247C405 203 470 182 550 182C650 182 730 206 768 250C700 238 620 252 520 252C450 252 405 252 385 247Z" fill="url(#g3)"/>
+   <path d="M62 298C62 272 120 260 220 258C320 256 380 272 480 272C580 272 660 256 745 266C775 270 775 296 758 302C738 312 690 312 600 312L120 312C80 312 62 308 62 298Z" fill="url(#g3)"/>
+   <rect x="110" y="264" width="12" height="46" rx="6" fill="#3a56a8" opacity=".8"/><rect x="610" y="264" width="12" height="46" rx="6" fill="#3a56a8" opacity=".8"/>
+   <rect x="250" y="288" width="120" height="18" rx="9" fill="#c8402e"/><rect x="420" y="290" width="70" height="14" rx="7" fill="#7a3b8f"/>
+   <path d="M330 252C350 190 440 160 540 158C650 156 760 190 792 258" stroke="#fff" stroke-width="4" fill="none" opacity=".85"/>
+   <path d="M0 300Q100 284 200 300T400 300T600 300T800 296" stroke="#fff" stroke-opacity=".55" fill="none"/>
+  </svg>
+
+  <div class="top">
+   <a class="pill" href="#top">IMFOO OFFICIAL</a>
+   <div class="meta"><span><span data-i="area"></span><b>Jabodetabek</b></span><span><span data-i="hours"></span><b>06:00–20:00</b></span><span><span data-i="from"></span><b>$11.25</b></span></div>
+   <label class="lang"><span aria-hidden="true">🌐</span>
+    <select id="lang" aria-label="Language">
+     <option value="en">English</option><option value="id">Indonesia</option><option value="es">Español (Europe)</option><option value="zh">中文</option><option value="ko">한국어</option><option value="ja">日本語</option>
+    </select><span aria-hidden="true" style="font-size:12px">▾</span></label>
+  </div>
+  <h1 data-i="h1"></h1>
+  <p class="lead" data-i="lead"></p>
+
+  <div class="glass c-left">
+   <h3 data-i="clT"></h3>
+   <p class="note" style="margin:0" data-i="clP"></p>
+   <div class="big" data-i="clB"></div>
+   <div class="row"><div class="stack" aria-hidden="true"><span style="background:#2a1f6b">J</span><span style="background:#f08a4b">B</span><span style="background:#2e9e6b">T</span></div><a class="go" href="#areas" aria-label="Areas">↗</a></div>
+  </div>
+  <div class="badge" aria-hidden="true">I</div>
+ </header>
+
+ <section id="services" style="margin-top:20px">
+  <div class="g3">
+   <div class="glass svc"><h3 data-i="s1T"></h3><p class="note" data-i="s1P"></p><ul class="clean" data-l="s1L"></ul></div>
+   <div class="glass svc" id="plan"><h3 data-i="s2T"></h3><p class="note" data-i="s2P"></p><ul class="clean" data-l="s2L"></ul></div>
+   <div class="glass svc"><h3 data-i="s3T"></h3><p class="note" data-i="s3P"></p><ul class="clean" data-l="s3L"></ul></div>
+  </div>
+ </section>
+
+ <section id="areas">
+  <h2 data-i="aT"></h2>
+  <p class="sub" data-i="aS"></p>
+  <div class="g4" id="cityGrid"></div>
+ </section>
+
+ <section id="food">
+  <h2 data-i="fT"></h2>
+  <p class="sub" data-i="fS"></p>
+  <div class="chipgrid" id="foodGrid"></div>
+ </section>
+
+ <section id="rates">
+  <h2 data-i="rT"></h2>
+  <p class="sub" data-i="rS"></p>
+  <div class="g6" id="rg"></div>
+ </section>
+
+ <section id="book">
+  <h2 data-i="bT"></h2>
+  <p class="sub" data-i="bS"></p>
+  <div class="g2" id="contact">
+   <div class="glass">
+    <label class="l" for="bn" data-i="fName"></label><input type="text" id="bn" autocomplete="name">
+    <label class="l" for="bc" data-i="fCtry"></label><input type="text" id="bc" autocomplete="country-name">
+    <label class="l" data-i="fDay"></label>
+    <div class="cal" id="cal"></div>
+    <p class="note" id="calNote"></p>
+    <div id="calAdmin" hidden class="row" style="flex-wrap:wrap;margin:6px 0;justify-content:flex-start"><button class="pill" id="calMode" type="button">Atur tanggal penuh</button><button class="pill dark" id="calSave" type="button" hidden>Simpan tanggal</button><span class="note" id="calAdminNote"></span></div>
+    <label class="l" for="bt" data-i="fTime"></label><select class="f" id="bt"></select>
+    <label class="l" data-i="fAreas"></label>
+    <div class="opts" id="areaOpts">
+     <label class="opt"><input type="checkbox" value="Jakarta"><span>Jakarta</span></label>
+     <label class="opt"><input type="checkbox" value="Bogor"><span>Bogor</span></label>
+     <label class="opt"><input type="checkbox" value="Tangerang"><span>Tangerang</span></label>
+     <label class="opt"><input type="checkbox" value="Not sure yet"><span data-i="fNot"></span></label>
+    </div>
+    <label class="l" data-i="fDur"></label>
+    <div class="opts" id="durOpts">
+     <label class="opt"><input type="radio" name="dur" value="2"><span data-n="2"></span></label>
+     <label class="opt"><input type="radio" name="dur" value="4"><span data-n="4"></span></label>
+     <label class="opt"><input type="radio" name="dur" value="6"><span data-n="6"></span></label>
+     <label class="opt"><input type="radio" name="dur" value="8"><span data-n="8"></span></label>
+     <label class="opt"><input type="radio" name="dur" value="12"><span data-n="12"></span></label>
+     <label class="opt"><input type="radio" name="dur" value="custom"><span data-i="pay"></span></label>
+    </div>
+    <div id="customBox" hidden><label class="l" for="ca" data-i="fAmt"></label><input type="number" id="ca" min="1" step="1" placeholder="USD"></div>
+    <label class="l" for="bm" data-i="fNotes"></label><textarea id="bm" rows="3"></textarea>
+    <p class="note" id="bstat" role="status"></p>
+    <button class="pill dark w" id="sendBook" data-i="send"></button>
+   </div>
+   <div class="glass ctc">
+    <div><h3 data-i="cdT"></h3><p class="note" data-i="cdP"></p></div>
+    <a class="crow" id="cWA" target="_blank" rel="noopener"><span class="ci">W</span><span><b>WhatsApp</b></span></a>
+    <a class="crow" id="cIG" target="_blank" rel="noopener"><span class="ci">I</span><span><b>Instagram</b></span></a>
+    <a class="crow" id="cTG" target="_blank" rel="noopener"><span class="ci">T</span><span><b>Telegram</b></span></a>
+    <a class="crow" id="cMail"><span class="ci">@</span><span><b>Email</b></span></a>
+    <p class="note" data-i="cdH"></p>
+   </div>
+  </div>
+
+  <div class="glass" id="payBox" hidden style="margin-top:16px">
+   <h3 data-i="pyT"></h3>
+   <div class="fee" id="feeText"></div>
+   <p class="note" data-i="pyP"></p>
+   <p style="margin:12px 0 2px"><b data-i="pyM"></b></p>
+   <p style="margin:0"><span class="note" data-i="pyN"></span>: <b>Imas Masfuah</b></p>
+   <p class="note" data-i="pyD"></p>
+  </div>
+ </section>
+
+ <section id="rules">
+  <div class="g2" style="grid-template-columns:1fr 1.3fr">
+   <div class="glass stk"><h3 data-i="canT"></h3><ul class="clean" data-l="canL"></ul></div>
+   <div class="glass stk"><h3 data-i="safT"></h3><ul class="clean" data-l="safL"></ul></div>
+  </div>
+ </section>
+
+ <section id="profile">
+  <div class="glass prof">
+   <div class="ava"><img id="ava" alt="Imas"></div>
+   <div>
+    <h2>Imas</h2>
+    <p class="note" style="margin-top:0" data-i="pTag"></p>
+    <p data-i="pBio"></p>
+    <div class="chips"><span class="chip">Bahasa Indonesia</span><span class="chip">I’m still learning English</span><span class="chip">Jakarta · Bogor · Tangerang</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="gallery">
+  <h2 data-i="gT"></h2>
+  <p class="sub" data-i="gS"></p>
+  <div class="row" id="galAdmin" hidden style="margin-bottom:18px;flex-wrap:wrap"><button class="pill dark" id="galBtn" type="button">+ Tambah foto galeri</button><input type="file" id="galIn" accept="image/*" multiple hidden><span class="note" id="galStat" role="status"></span></div>
+  <div class="glass stage" id="galStage" hidden><h3>Isi nama dan negara customer (boleh dikosongkan)</h3><div id="stageList"></div><div class="row" style="flex-wrap:wrap;margin-top:14px"><button class="pill dark" id="stageSave" type="button">Simpan ke galeri</button><button class="pill" id="stageCancel" type="button">Batal</button></div></div>
+  <div class="gal" id="gal"></div>
+  <div class="glass empty" id="galE"><div class="ico">▦</div><p class="note" data-i="gE"></p></div>
+ </section>
+
+ <section id="reviews">
+  <h2 data-i="vT"></h2>
+  <p class="sub" data-i="vS"></p>
+  <div class="g2">
+   <div class="glass" id="revBox"><div id="revList" aria-live="polite"></div><div class="empty" id="revE"><p class="note" data-i="vE"></p></div></div>
+   <div class="glass">
+    <h3 data-i="lrT"></h3>
+    <label class="l" for="rn" data-i="rName"></label><input type="text" id="rn">
+    <label class="l" for="rc" data-i="fCtry"></label><input type="text" id="rc">
+    <label class="l" for="rs" data-i="rRate"></label><select class="f" id="rs"><option value="5">5 ★</option><option value="4">4 ★</option><option value="3">3 ★</option><option value="2">2 ★</option><option value="1">1 ★</option></select>
+    <label class="l" for="rt" data-i="rText"></label><textarea id="rt" rows="3"></textarea>
+    <label class="l" for="rp" data-i="rPhoto"></label>
+    <input type="file" id="rp" accept="image/*" style="max-width:100%">
+    <img id="prev" alt="Preview"><div><button class="link" id="rmPhoto" hidden data-i="rRm"></button></div>
+    <p class="note" id="rstat" role="status"></p>
+    <button class="pill dark w" id="sendRev" data-i="rSend"></button>
+    <p class="note" data-i="rNote"></p>
+   </div>
+  </div>
+ </section>
+
+ <footer>Powered by IMFOO OFFICIAL · <a href="#" id="adminLink" style="color:inherit;opacity:.6">Admin</a></footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dT"><div class="dbox">
+ <button class="x" id="dx" aria-label="Close">✕</button>
+ <h2 id="dT"></h2><p class="sub" id="dS" style="margin-bottom:14px"></p>
+ <div id="dL"></div>
+ <div class="row" style="margin-top:20px"><a class="pill dark" id="dGo" href="#book" data-i="plan"></a></div>
+</div></dialog>
+<dialog id="qd" aria-labelledby="qT"><div class="dbox"><button class="x" id="qx" aria-label="Close">✕</button><h2 id="qT" data-i="pay"></h2><p class="sub" data-i="qrN" style="margin-bottom:14px"></p><img id="qi" alt="QRIS" style="width:100%;border-radius:24px;display:block"></div></dialog>
+<dialog id="ad" aria-labelledby="adT"><div class="dbox"><button class="x" id="adx" aria-label="Close">✕</button><h2 id="adT">Admin</h2><p class="sub" style="margin-bottom:10px">Khusus pemilik. Token hanya disimpan di browser ini.</p>
+<label class="l" for="adRepo">Repository (pemilik/nama-repo)</label><input type="text" id="adRepo" placeholder="username/imfoo-website" autocomplete="off">
+<label class="l" for="adBr">Branch</label><input type="text" id="adBr" value="main" autocomplete="off">
+<label class="l" for="adTok">GitHub token</label><input type="password" id="adTok" autocomplete="off">
+<p class="note" id="adStat" role="status"></p>
+<div class="row" style="flex-wrap:wrap"><button class="pill dark" id="adOk" type="button">Masuk</button><button class="pill" id="adOut" type="button" hidden>Keluar</button></div></div></dialog>
+<dialog id="lb"><div class="dbox" style="padding:18px"><button class="x" id="lbx" aria-label="Close">✕</button><img id="lbi" alt=""><p id="lbc" class="cap" style="margin:10px 0 0"></p></div></dialog>
+
+<script>
+// ===== EDIT THESE =====
+const CONFIG={wa:"6288971329720",ig:"imasfoo",email:"imfoo1298@gmail.com",tg:"Imasfu"};
+const PHOTO="img/profile.jpg";
+let GALLERY=([]).map(x=>typeof x==="string"?{s:x,n:"",c:""}:{s:x.s,n:x.n||"",c:x.c||""});
+let BOOKED=([]).filter(x=>typeof x==="string");
+const REVIEWS=[
+ // {name:"Guest name",country:"Country",rating:5,text:"Review text",date:"Oct 2026",photo:""},
+];
+// ======================
+const FEES={"2":[15,11.25],"4":[25,18.75],"6":[40,30],"8":[50,37.5],"12":[60,45]};
+const usd=n=>"$"+(Number.isInteger(n)?n:n.toFixed(2));
+const L={
+en:{h1:"Be My Local\nFriend",lead:"Explore Jakarta, Bogor and Tangerang with me, not a tour group. No fixed itinerary, no rushing from one attraction to another.",area:"Area",hours:"Hours",from:"From",
+clT:"Find your perfect day",clP:"Tell me your taste, budget and pace. I'll plan the day and come with you.",clB:"3 cities",
+crT:"Sample day",crP:"Local breakfast, a market or park, lunch you won't find in guidebooks, then dessert or coffee.",crS:"6 hours · flexible stops",crBtn:"See an example",
+s1T:"Be my local friend",s1P:"You choose where to go. I come with you. We can tour the city or simply spend time in a park. You decide.",s1L:["Flexible itinerary","Local recommendations","Basic cultural explanations","Help with transport and talking to locals","Photos with your phone"],
+s2T:"You choose, I plan",s2P:"No idea where to go? Share your interests, food preferences and budget, and I'll build a day that can change as we go.",s2L:["10:00 Meet, local breakfast","12:00 A Bogor garden or a local market","14:00 Indonesian lunch","17:30 Dessert or coffee","19:00 Dinner"],
+s3T:"Shop with a local",s3P:"We walk, take an online motorbike or car, or ride the Commuterline train, whichever suits the place.",s3L:["Traditional markets","Shopping malls","Souvenir shops","Batik shops","Local clothing stores"],
+aT:"Three cities, one local friend",aS:"Tap a city to see its most popular places.",seePl:"See places",
+fT:"Food adventure",fS:"Tap a category to see what we can eat. You choose, I take you there.",
+fc:["Indonesian food","Street food","Viral food","Spicy food","Desserts","Hidden local restaurants"],
+rT:"Guide fee",rS:"Available 06:00–20:00 with a flexible start time, up to 12 hours per booking. The fee covers my time and service only. Transport, food, drinks, tickets and personal expenses are paid separately.",hrs:"hours",pay:"Tip",
+bT:"Book or ask a question",bS:"Fill in your plan and press send. WhatsApp opens with your message ready.",fName:"Full name",fCtry:"Country",fDate:"Date and start time",fDatePh:"e.g. 12 Nov, 10:00",fAreas:"Where do you want to go?",fNot:"Not sure yet",fDur:"How long?",fAmt:"Your amount in USD",fNotes:"Interests, food and budget",send:"Send via WhatsApp",
+eName:"Please type your full name and country.",eDur:"Please choose how long you'd like to go out.",eAmt:"Please enter your amount.",
+cdT:"Contact directly",cdP:"Prefer to chat first? Reach me here.",cdH:"Available 06:00–20:00",
+pyT:"Payment info",pyFee:"Your fee",pyAsk:"Enter your amount above.",pyP:"Payment is manual. After I confirm your booking, you pay by QRIS or bank transfer. Nothing is charged on this website.",pyM:"Methods: QRIS or bank transfer",pyN:"Account name",pyD:"I'll send the QRIS code and account details on WhatsApp once your booking is confirmed.",
+canT:"Cancellation",canL:["Free up to 24 hours before the meeting time","Within 24 hours: may be charged 50%","No-show: may be charged 100%"],
+safT:"Boundaries and safety",safL:["We meet in public places","I don't accompany guests inside hotel rooms or private rooms","I don't accept sexual requests or services","I may decline requests that feel unsafe","I don't provide transport in my personal vehicle","Guest identity and booking details are recorded, and my itinerary may be shared with a trusted person"],
+pTag:"Your local friend in Jabodetabek",pBio:"Hi, I'm Imas. I'll show you everyday JaBoTa (Jakarta, Bogor, Tangerang) the way locals live it: where we eat, shop and hang out. You set the pace, and I handle the transport and the communication with locals. We can also learn new things together or swap experiences.",
+gT:"My gallery",gS:"Moments from days out in Jabodetabek.",gE:"Photos from our days out will appear here soon.",
+vT:"Reviews",vS:"What guests say about their day.",vE:"No reviews yet. Be the first to share your day.",lrT:"Leave a review",rName:"Your name",rRate:"Rating",rText:"Your review",rPhoto:"Add one photo (optional, max 5 MB)",rRm:"Remove photo",rSend:"Send review",rNote:"Your review is sent to me first, then I add it here.",
+rErr:"Please add your name and a few words about your day.",rBig:"That photo is over 5 MB. Please choose a smaller one.",rSh:"Choose WhatsApp and send it to Imas. Thank you!",rO1:"WhatsApp opened. Please attach your photo in the chat, then send.",rO2:"WhatsApp opened. Tap send to finish.",close:"Close",plan:"Plan this with me",exp:"Places you can explore:",off:"25% OFF",fDay:"Date",fTime:"Start time",eDate:"Please choose a date and a start time.",bkn:"Dates in red are already booked.",ref:"Reference",qrN:"Scan this QRIS with any Indonesian bank or e-wallet app, then enter the amount you wish to pay.",chk:"Prices and hours are approximate and can change. I'll confirm the latest before we go."},
+id:{h1:"Jadi Teman\nLokalmu",lead:"Jelajahi Jakarta, Bogor, dan Tangerang bersamaku, bukan rombongan tur. Tanpa itinerary kaku, tanpa terburu-buru dari satu tempat ke tempat lain.",area:"Area",hours:"Jam",from:"Mulai",
+clT:"Temukan harimu",clP:"Ceritakan selera, budget, dan ritmemu. Aku susun harinya dan ikut bersamamu.",clB:"3 kota",
+crT:"Contoh hari",crP:"Sarapan lokal, pasar atau taman, makan siang yang tak ada di buku panduan, lalu dessert atau kopi.",crS:"6 jam · fleksibel",crBtn:"Lihat contoh",
+s1T:"Jadi teman lokalmu",s1P:"Kamu pilih tujuan, aku ikut. Kita bisa berkeliling kota atau cukup menghabiskan waktu di taman. Kamu yang putuskan.",s1L:["Itinerary fleksibel","Rekomendasi lokal","Penjelasan budaya dasar","Bantu transportasi dan bicara dengan warga","Foto dengan HP-mu"],
+s2T:"Kamu pilih, aku susun",s2P:"Bingung mau ke mana? Ceritakan minat, makanan favorit, dan budget, lalu aku susun hari yang bisa berubah di jalan.",s2L:["10:00 Bertemu, sarapan lokal","12:00 Kebun di Bogor atau pasar lokal","14:00 Makan siang khas Indonesia","17:30 Dessert atau kopi","19:00 Makan malam"],
+s3T:"Belanja bareng orang lokal",s3P:"Kita jalan kaki, naik ojek atau mobil online, atau naik KRL, sesuai tempatnya.",s3L:["Pasar tradisional","Mal","Toko suvenir","Toko batik","Toko pakaian lokal"],
+aT:"Tiga kota, satu teman lokal",aS:"Ketuk kota untuk melihat tempat paling populer.",seePl:"Lihat tempat",
+fT:"Petualangan kuliner",fS:"Ketuk kategori untuk melihat apa yang bisa kita makan. Kamu pilih, aku antar.",
+fc:["Makanan Indonesia","Makanan kaki lima","Makanan viral","Makanan pedas","Dessert","Restoran lokal tersembunyi"],
+rT:"Tarif pemandu",rS:"Tersedia 06.00–20.00 dengan jam mulai fleksibel, maksimal 12 jam per booking. Tarif hanya untuk waktu dan jasaku. Transportasi, makanan, minuman, tiket, dan pengeluaran pribadi dibayar terpisah.",hrs:"jam",pay:"Tip",
+bT:"Booking atau bertanya",bS:"Isi rencanamu lalu tekan kirim. WhatsApp terbuka dengan pesan yang sudah siap.",fName:"Nama lengkap",fCtry:"Negara asal",fDate:"Tanggal dan jam mulai",fDatePh:"mis. 12 Nov, 10:00",fAreas:"Mau ke mana?",fNot:"Belum tahu",fDur:"Berapa lama?",fAmt:"Nominalmu dalam USD",fNotes:"Minat, makanan, dan budget",send:"Kirim lewat WhatsApp",
+eName:"Isi nama lengkap dan negara dulu ya.",eDur:"Pilih dulu berapa lama kamu mau jalan.",eAmt:"Masukkan nominalmu.",
+cdT:"Hubungi langsung",cdP:"Mau ngobrol dulu? Hubungi aku di sini.",cdH:"Tersedia 06.00–20.00",
+pyT:"Info pembayaran",pyFee:"Tarifmu",pyAsk:"Isi nominalmu di atas.",pyP:"Pembayaran manual. Setelah booking kukonfirmasi, kamu bayar lewat QRIS atau transfer bank. Tidak ada pembayaran di website ini.",pyM:"Metode: QRIS atau transfer bank",pyN:"Atas nama",pyD:"Kode QRIS dan detail rekening kukirim lewat WhatsApp setelah booking dikonfirmasi.",
+canT:"Pembatalan",canL:["Gratis sampai 24 jam sebelum jam bertemu","Dalam 24 jam: bisa dikenai 50%","Tidak datang: bisa dikenai 100%"],
+safT:"Batasan dan keamanan",safL:["Kita bertemu di tempat umum","Aku tidak menemani tamu ke kamar hotel atau ruang pribadi","Aku tidak menerima permintaan atau layanan seksual","Aku boleh menolak permintaan yang terasa tidak aman","Aku tidak memberi tumpangan dengan kendaraan pribadiku","Identitas tamu dan data booking dicatat, dan itinerary boleh dibagikan ke orang tepercaya"],
+pTag:"Teman lokalmu di Jabodetabek",pBio:"Hai, aku Imas. Aku akan menunjukkan JaBoTa sehari-hari seperti orang lokal menjalaninya: tempat kita makan, belanja, dan nongkrong. Kamu atur ritmenya, aku urus transportasi dan komunikasi dengan orang lokal, bersama-sama belajar hal baru atau bertukar pengalaman.",
+gT:"Galeriku",gS:"Momen dari hari-hari jalan di Jabodetabek.",gE:"Foto dari hari-hari jalan kita akan muncul di sini.",
+vT:"Ulasan",vS:"Kata tamu tentang hari mereka.",vE:"Belum ada ulasan. Jadilah yang pertama.",lrT:"Tulis ulasan",rName:"Namamu",rRate:"Nilai",rText:"Ulasanmu",rPhoto:"Tambah satu foto (opsional, maks 5 MB)",rRm:"Hapus foto",rSend:"Kirim ulasan",rNote:"Ulasanmu dikirim ke aku dulu, lalu kutambahkan di sini.",
+rErr:"Isi nama dan sedikit cerita tentang harimu ya.",rBig:"Foto lebih dari 5 MB. Pilih yang lebih kecil.",rSh:"Pilih WhatsApp lalu kirim ke Imas. Terima kasih!",rO1:"WhatsApp terbuka. Lampirkan fotomu di chat, lalu kirim.",rO2:"WhatsApp terbuka. Tekan kirim untuk selesai.",close:"Tutup",plan:"Rencanakan bersamaku",exp:"Tempat yang bisa dijelajahi:",off:"DISKON 25%",fDay:"Tanggal",fTime:"Jam mulai",eDate:"Pilih tanggal dan jam mulai dulu ya.",bkn:"Tanggal merah sudah dibooking.",ref:"Referensi",qrN:"Scan QRIS ini dengan aplikasi bank atau e-wallet apa saja, lalu masukkan nominal yang kamu mau.",chk:"Harga dan jam buka berupa perkiraan dan bisa berubah. Aku konfirmasi yang terbaru sebelum kita berangkat."},
+es:{h1:"Sé mi amigo\nlocal",lead:"Explora Jakarta, Bogor y Tangerang conmigo, no con un grupo turístico. Sin itinerario fijo y sin prisas de una atracción a otra.",area:"Zona",hours:"Horario",from:"Desde",
+clT:"Encuentra tu día perfecto",clP:"Cuéntame tus gustos, tu presupuesto y tu ritmo. Yo planeo el día y te acompaño.",clB:"3 ciudades",
+crT:"Día de ejemplo",crP:"Desayuno local, un mercado o parque, un almuerzo que no está en las guías y después postre o café.",crS:"6 horas · paradas flexibles",crBtn:"Ver un ejemplo",
+s1T:"Sé mi amigo local",s1P:"Tú eliges el destino, yo te acompaño. Podemos recorrer la ciudad o simplemente pasar el rato en un parque. Tú decides.",s1L:["Itinerario flexible","Recomendaciones locales","Explicaciones culturales básicas","Ayuda con el transporte y para hablar con la gente","Fotos con tu móvil"],
+s2T:"Tú eliges, yo planeo",s2P:"¿No sabes adónde ir? Cuéntame tus intereses, tus gustos de comida y tu presupuesto, y armaré un día que puede cambiar sobre la marcha.",s2L:["10:00 Encuentro y desayuno local","12:00 Un jardín de Bogor o un mercado local","14:00 Almuerzo indonesio","17:30 Postre o café","19:00 Cena"],
+s3T:"De compras con un local",s3P:"Vamos a pie, en moto o coche de aplicación, o en el tren Commuterline, según el lugar.",s3L:["Mercados tradicionales","Centros comerciales","Tiendas de souvenirs","Tiendas de batik","Tiendas de ropa local"],
+aT:"Tres ciudades, un amigo local",aS:"Toca una ciudad para ver sus lugares más populares.",seePl:"Ver lugares",
+fT:"Aventura gastronómica",fS:"Toca una categoría para ver qué podemos comer. Tú eliges, yo te llevo.",
+fc:["Comida indonesia","Comida callejera","Comida viral","Comida picante","Postres","Restaurantes locales escondidos"],
+rT:"Tarifa de guía",rS:"Disponible de 06:00 a 20:00 con hora de inicio flexible, hasta 12 horas por reserva. La tarifa cubre solo mi tiempo y servicio. Transporte, comida, bebidas, entradas y gastos personales se pagan aparte.",hrs:"horas",pay:"Propina",
+bT:"Reserva o pregunta",bS:"Completa tu plan y pulsa enviar. WhatsApp se abre con tu mensaje listo.",fName:"Nombre completo",fCtry:"País",fDate:"Fecha y hora de inicio",fDatePh:"p. ej. 12 nov, 10:00",fAreas:"¿Adónde quieres ir?",fNot:"Aún no lo sé",fDur:"¿Cuánto tiempo?",fAmt:"Tu importe en USD",fNotes:"Intereses, comida y presupuesto",send:"Enviar por WhatsApp",
+eName:"Escribe tu nombre completo y tu país.",eDur:"Elige cuánto tiempo quieres salir.",eAmt:"Introduce tu importe.",
+cdT:"Contacto directo",cdP:"¿Prefieres hablar antes? Escríbeme aquí.",cdH:"Disponible 06:00–20:00",
+pyT:"Información de pago",pyFee:"Tu tarifa",pyAsk:"Escribe tu importe arriba.",pyP:"El pago es manual. Cuando confirme tu reserva, pagas con QRIS o transferencia bancaria. No se cobra nada en este sitio.",pyM:"Métodos: QRIS o transferencia bancaria",pyN:"Titular de la cuenta",pyD:"Te enviaré el código QRIS y los datos de la cuenta por WhatsApp cuando confirme tu reserva.",
+canT:"Cancelación",canL:["Gratis hasta 24 horas antes de la cita","Dentro de 24 horas: se puede cobrar el 50 %","Si no te presentas: se puede cobrar el 100 %"],
+safT:"Límites y seguridad",safL:["Nos vemos en lugares públicos","No acompaño a huéspedes dentro de habitaciones de hotel ni espacios privados","No acepto peticiones ni servicios sexuales","Puedo rechazar peticiones que no sean seguras","No ofrezco transporte en mi vehículo personal","Se registran la identidad y los datos de la reserva, y mi itinerario puede compartirse con una persona de confianza"],
+pTag:"Tu amiga local en Jabodetabek",pBio:"Hola, soy Imas. Te enseñaré el día a día de JaBoTa (Jakarta, Bogor, Tangerang) como lo vive la gente de aquí: dónde comemos, compramos y pasamos el rato. Tú marcas el ritmo; yo me ocupo del transporte y de la comunicación con la gente local. Juntos podemos aprender cosas nuevas o intercambiar experiencias.",
+gT:"Mi galería",gS:"Momentos de nuestros días por Jabodetabek.",gE:"Pronto aparecerán aquí fotos de nuestros días de paseo.",
+vT:"Reseñas",vS:"Lo que dicen los huéspedes sobre su día.",vE:"Aún no hay reseñas. Sé la primera persona en escribir una.",lrT:"Deja una reseña",rName:"Tu nombre",rRate:"Valoración",rText:"Tu reseña",rPhoto:"Añade una foto (opcional, máx. 5 MB)",rRm:"Quitar foto",rSend:"Enviar reseña",rNote:"Tu reseña me llega primero y luego la añado aquí.",close:"Cerrar",plan:"Planéalo conmigo",exp:"Lugares que puedes explorar:",off:"25 % DTO.",fDay:"Fecha",fTime:"Hora de inicio",eDate:"Elige una fecha y una hora de inicio.",bkn:"Las fechas en rojo ya están reservadas.",ref:"Referencia",qrN:"Escanea este QRIS con cualquier app de banco o monedero electrónico de Indonesia e introduce el importe que quieras.",chk:"Los precios y horarios son aproximados y pueden cambiar. Confirmaré los más recientes antes de ir."},
+zh:{h1:"做你的\n本地朋友",lead:"和我一起探索雅加达、茂物和唐格朗，而不是跟着旅行团。没有固定行程，也不用在景点之间匆忙赶路。",area:"地区",hours:"时间",from:"起价",
+clT:"找到你的完美一天",clP:"告诉我你的口味、预算和节奏，我来安排并全程陪你。",clB:"3座城市",
+crT:"行程示例",crP:"地道的早餐、市场或公园、指南上找不到的午餐，再来一份甜点或咖啡。",crS:"6小时 · 灵活停靠",crBtn:"查看示例",
+s1T:"做你的本地朋友",s1P:"你选目的地，我陪你去。我们可以在城里逛逛，也可以只在公园里度过时光，由你决定。",s1L:["灵活的行程","本地推荐","基础文化讲解","帮忙解决交通和与当地人沟通","用你的手机拍照"],
+s2T:"你来选，我来排",s2P:"不知道去哪儿？告诉我你的兴趣、饮食偏好和预算，我会安排一天，途中也可以随时调整。",s2L:["10:00 见面，当地早餐","12:00 茂物的花园或当地市场","14:00 印尼午餐","17:30 甜点或咖啡","19:00 晚餐"],
+s3T:"和本地人一起逛街",s3P:"我们可以步行、叫摩托车或网约车，或乘坐通勤列车，视地点而定。",s3L:["传统市场","购物中心","纪念品店","蜡染店","本地服装店"],
+aT:"三座城市，一位本地朋友",aS:"点击城市，查看最受欢迎的景点。",seePl:"查看景点",
+fT:"美食之旅",fS:"点击类别，看看我们能吃什么。你来选，我带你去。",
+fc:["印尼美食","街头小吃","网红美食","辣味美食","甜点","隐藏的本地餐厅"],
+rT:"向导费用",rS:"服务时间 06:00–20:00，开始时间灵活，每次预订最长12小时。费用仅包含我的时间和服务。交通、餐饮、饮品、门票和个人开销另付。",hrs:"小时",pay:"小费",
+bT:"预订或咨询",bS:"填写你的计划后点击发送，WhatsApp 会打开并带上写好的消息。",fName:"姓名",fCtry:"国家",fDate:"日期和开始时间",fDatePh:"例如 11月12日 10:00",fAreas:"你想去哪里？",fNot:"还没想好",fDur:"玩多久？",fAmt:"你的金额（美元）",fNotes:"兴趣、饮食和预算",send:"通过 WhatsApp 发送",
+eName:"请填写姓名和国家。",eDur:"请选择想出游的时长。",eAmt:"请输入你的金额。",
+cdT:"直接联系",cdP:"想先聊聊？在这里找我。",cdH:"服务时间 06:00–20:00",
+pyT:"付款信息",pyFee:"你的费用",pyAsk:"请在上方输入金额。",pyP:"手动付款。我确认预订后，你可通过 QRIS 或银行转账付款。本网站不会扣款。",pyM:"方式：QRIS 或银行转账",pyN:"账户名",pyD:"预订确认后，我会通过 WhatsApp 发送 QRIS 码和账户信息。",
+canT:"取消政策",canL:["见面前24小时以上可免费取消","24小时内取消：可能收取50%","未到场：可能收取100%"],
+safT:"个人界限与安全",safL:["我们在公共场所见面","我不陪同客人进入酒店房间或私人空间","我不接受任何性要求或性服务","对不安全的要求，我可以拒绝","我不使用私人车辆提供接送","会记录客人身份和预订信息，我的行程可能会分享给信任的人"],
+pTag:"你在大雅加达地区的本地朋友",pBio:"你好，我是 Imas。我会带你看 JaBoTa（雅加达、茂物、唐格朗）当地人真实的日常生活：在哪里吃、在哪里逛、在哪里闲聊。节奏由你定，交通和与当地人的沟通交给我。我们也可以一起学习新事物，交流彼此的经历。",
+gT:"我的相册",gS:"在大雅加达地区出游的瞬间。",gE:"我们出游的照片很快会出现在这里。",
+vT:"评价",vS:"客人如何评价他们的一天。",vE:"还没有评价，来写第一条吧。",lrT:"留下评价",rName:"你的名字",rRate:"评分",rText:"你的评价",rPhoto:"添加一张照片（可选，最大5 MB）",rRm:"移除照片",rSend:"发送评价",rNote:"评价会先发给我，之后我再添加到这里。",close:"关闭",plan:"和我一起规划",exp:"可以探索的地方：",off:"减25%",fDay:"日期",fTime:"开始时间",eDate:"请选择日期和开始时间。",bkn:"红色日期已被预订。",ref:"参考",qrN:"用任意印尼银行或电子钱包 App 扫描此 QRIS，并输入你想支付的金额。",chk:"价格和开放时间仅供参考，可能会变动。出发前我会确认最新信息。"},
+ko:{h1:"나의 현지\n친구",lead:"단체 투어가 아니라 저와 함께 자카르타, 보고르, 탕에랑을 둘러보세요. 정해진 일정도, 명소에서 명소로 서두르는 일도 없습니다.",area:"지역",hours:"시간",from:"시작가",
+clT:"완벽한 하루 찾기",clP:"취향, 예산, 속도를 알려 주세요. 하루를 짜고 함께 다닐게요.",clB:"3개 도시",
+crT:"하루 예시",crP:"현지 아침 식사, 시장이나 공원, 가이드북에 없는 점심, 그리고 디저트나 커피.",crS:"6시간 · 유연한 일정",crBtn:"예시 보기",
+s1T:"나의 현지 친구",s1P:"가고 싶은 곳을 고르면 제가 함께 갑니다. 도시를 둘러봐도 좋고, 공원에서 시간을 보내도 좋아요. 정하는 건 당신이에요.",s1L:["유연한 일정","현지 추천","기본 문화 설명","교통과 현지인과의 소통 도움","휴대폰으로 사진 촬영"],
+s2T:"고르는 건 당신, 짜는 건 저",s2P:"어디 갈지 모르겠나요? 관심사, 음식 취향, 예산을 알려 주시면 도중에 바뀔 수 있는 하루를 만들어 드릴게요.",s2L:["10:00 만남, 현지 아침 식사","12:00 보고르 정원 또는 현지 시장","14:00 인도네시아 점심","17:30 디저트 또는 커피","19:00 저녁 식사"],
+s3T:"현지인과 쇼핑",s3P:"장소에 따라 걷거나, 온라인 오토바이·자동차를 타거나, 통근 열차를 탑니다.",s3L:["전통 시장","쇼핑몰","기념품 가게","바틱 가게","현지 의류 매장"],
+aT:"세 도시, 한 명의 현지 친구",aS:"도시를 누르면 가장 인기 있는 장소를 볼 수 있어요.",seePl:"장소 보기",
+fT:"음식 여행",fS:"카테고리를 누르면 먹을 수 있는 음식을 볼 수 있어요. 고르는 건 당신, 안내는 제가.",
+fc:["인도네시아 음식","길거리 음식","화제의 음식","매운 음식","디저트","숨은 현지 맛집"],
+rT:"가이드 요금",rS:"06:00–20:00 이용 가능, 시작 시간은 유연하며 예약당 최대 12시간입니다. 요금은 제 시간과 서비스에만 해당합니다. 교통, 식음료, 입장권, 개인 경비는 별도입니다.",hrs:"시간",pay:"팁",
+bT:"예약 또는 문의",bS:"계획을 입력하고 보내기를 누르세요. 작성된 메시지와 함께 WhatsApp이 열립니다.",fName:"이름(전체)",fCtry:"국가",fDate:"날짜 및 시작 시간",fDatePh:"예: 11월 12일 10:00",fAreas:"어디에 가고 싶으세요?",fNot:"아직 모르겠어요",fDur:"얼마나 오래?",fAmt:"금액(USD)",fNotes:"관심사, 음식, 예산",send:"WhatsApp으로 보내기",
+eName:"이름과 국가를 입력해 주세요.",eDur:"이용 시간을 선택해 주세요.",eAmt:"금액을 입력해 주세요.",
+cdT:"직접 연락",cdP:"먼저 이야기해 보고 싶나요? 여기로 연락하세요.",cdH:"이용 가능 06:00–20:00",
+pyT:"결제 안내",pyFee:"요금",pyAsk:"위에 금액을 입력해 주세요.",pyP:"수동 결제입니다. 예약을 확정하면 QRIS 또는 계좌 이체로 결제합니다. 이 웹사이트에서는 결제되지 않습니다.",pyM:"방법: QRIS 또는 계좌 이체",pyN:"예금주",pyD:"예약이 확정되면 WhatsApp으로 QRIS 코드와 계좌 정보를 보내 드립니다.",
+canT:"취소 정책",canL:["만나기 24시간 전까지 무료 취소","24시간 이내 취소: 50% 청구될 수 있음","노쇼: 100% 청구될 수 있음"],
+safT:"경계 및 안전",safL:["공공장소에서 만납니다","호텔 객실이나 사적인 공간에는 동행하지 않습니다","성적인 요청이나 서비스는 받지 않습니다","안전하지 않은 요청은 거절할 수 있습니다","개인 차량으로 이동 서비스를 제공하지 않습니다","손님의 신원과 예약 정보가 기록되며, 제 일정은 신뢰할 수 있는 사람과 공유될 수 있습니다"],
+pTag:"자보데타벡의 현지 친구",pBio:"안녕하세요, 이마스예요. 현지 사람들이 사는 그대로의 JaBoTa(자카르타, 보고르, 탕에랑)를 보여 드릴게요. 어디서 먹고, 쇼핑하고, 어울리는지요. 속도는 당신이 정하고, 교통과 현지인과의 소통은 제가 맡을게요. 함께 새로운 것을 배우거나 경험을 나눌 수도 있어요.",
+gT:"내 갤러리",gS:"자보데타벡에서 보낸 날들의 순간.",gE:"함께한 날들의 사진이 곧 여기에 올라와요.",
+vT:"후기",vS:"손님들이 말하는 그날의 이야기.",vE:"아직 후기가 없어요. 첫 후기를 남겨 주세요.",lrT:"후기 남기기",rName:"이름",rRate:"평점",rText:"후기 내용",rPhoto:"사진 1장 추가(선택, 최대 5 MB)",rRm:"사진 삭제",rSend:"후기 보내기",rNote:"후기는 먼저 저에게 전달되고, 이후 여기에 추가됩니다.",close:"닫기",plan:"함께 계획하기",exp:"둘러볼 수 있는 곳:",off:"25% 할인",fDay:"날짜",fTime:"시작 시간",eDate:"날짜와 시작 시간을 선택해 주세요.",bkn:"빨간색 날짜는 이미 예약되었어요.",ref:"참고",qrN:"인도네시아 은행 또는 전자지갑 앱으로 이 QRIS를 스캔한 뒤 원하는 금액을 입력하세요.",chk:"가격과 운영 시간은 대략적인 정보이며 바뀔 수 있어요. 출발 전에 최신 정보를 확인할게요."},
+ja:{h1:"あなたの\n現地の友だち",lead:"ツアーではなく私と一緒に、ジャカルタ、ボゴール、タンゲランを巡りましょう。決まった行程も、観光地から観光地への慌ただしい移動もありません。",area:"エリア",hours:"時間",from:"料金",
+clT:"理想の一日を見つけよう",clP:"好み、予算、ペースを教えてください。一日を組み立てて、一緒に回ります。",clB:"3つの街",
+crT:"一日の例",crP:"地元の朝ごはん、市場や公園、ガイドブックに載らないランチ、そしてデザートかコーヒー。",crS:"6時間 · 柔軟に立ち寄り",crBtn:"例を見る",
+s1T:"現地の友だちになります",s1P:"行きたい場所を選んでください。私が一緒に行きます。街を巡ることも、公園でのんびり過ごすこともできます。決めるのはあなたです。",s1L:["柔軟な行程","地元のおすすめ","基本的な文化の説明","移動と現地の人との会話をサポート","あなたのスマホで写真撮影"],
+s2T:"選ぶのはあなた、組むのは私",s2P:"行き先が決まっていませんか？興味、食の好み、予算を教えてください。途中で変えられる一日を作ります。",s2L:["10:00 待ち合わせ、地元の朝食","12:00 ボゴールの庭園、または地元の市場","14:00 インドネシア料理のランチ","17:30 デザートかコーヒー","19:00 夕食"],
+s3T:"現地の人と買い物",s3P:"場所に合わせて、徒歩、配車バイクや車、通勤電車を使います。",s3L:["伝統市場","ショッピングモール","お土産店","バティックのお店","地元の洋服店"],
+aT:"3つの街、ひとりの現地の友だち",aS:"街をタップすると、人気のスポットが見られます。",seePl:"スポットを見る",
+fT:"グルメの冒険",fS:"カテゴリをタップすると食べられるものが見られます。選ぶのはあなた、案内は私。",
+fc:["インドネシア料理","屋台グルメ","話題のグルメ","辛い料理","デザート","隠れた地元の名店"],
+rT:"ガイド料金",rS:"対応時間は06:00〜20:00、開始時間は柔軟で、1回の予約は最大12時間です。料金は私の時間とサービスのみです。交通費、食事、飲み物、入場料、個人の出費は別途お支払いください。",hrs:"時間",pay:"チップ",
+bT:"予約・お問い合わせ",bS:"プランを入力して送信を押すと、メッセージ入りでWhatsAppが開きます。",fName:"氏名",fCtry:"国",fDate:"日付と開始時間",fDatePh:"例：11月12日 10:00",fAreas:"どこに行きたいですか？",fNot:"まだ未定",fDur:"どのくらい？",fAmt:"金額（USD）",fNotes:"興味、食事、予算",send:"WhatsAppで送る",
+eName:"氏名と国を入力してください。",eDur:"お出かけの長さを選んでください。",eAmt:"金額を入力してください。",
+cdT:"直接連絡",cdP:"先に話したい方はこちらから。",cdH:"対応時間 06:00〜20:00",
+pyT:"お支払い情報",pyFee:"料金",pyAsk:"上に金額を入力してください。",pyP:"お支払いは手動です。予約を確認後、QRISまたは銀行振込でお支払いください。このサイトでは課金されません。",pyM:"方法：QRISまたは銀行振込",pyN:"口座名義",pyD:"予約確認後、QRISコードと口座情報をWhatsAppでお送りします。",
+canT:"キャンセル",canL:["待ち合わせの24時間前まで無料","24時間以内：50%を請求する場合があります","無断キャンセル：100%を請求する場合があります"],
+safT:"境界と安全",safL:["待ち合わせは公共の場所です","ホテルの部屋や私的な空間にはご一緒しません","性的な要求やサービスはお受けしません","安全でない要求はお断りすることがあります","私の個人の車両での送迎は行いません","ゲストの身元と予約情報を記録し、行程は信頼できる人に共有することがあります"],
+pTag:"ジャボデタベックの現地の友だち",pBio:"こんにちは、イマスです。地元の人が暮らすままのJaBoTa（ジャカルタ、ボゴール、タンゲラン）をご案内します。どこで食べて、買い物して、過ごすのか。ペースはあなたが決めて、移動と現地の人とのやりとりは私にお任せください。一緒に新しいことを学んだり、経験を交換したりもできます。",
+gT:"マイギャラリー",gS:"ジャボデタベックでの一日の思い出。",gE:"一緒に出かけた日の写真が、もうすぐここに並びます。",
+vT:"レビュー",vS:"ゲストの一日の感想。",vE:"まだレビューはありません。最初の一人になりませんか。",lrT:"レビューを書く",rName:"お名前",rRate:"評価",rText:"レビュー",rPhoto:"写真を1枚追加（任意、最大5 MB）",rRm:"写真を削除",rSend:"レビューを送る",rNote:"レビューはまず私に届き、あとでここに追加します。",close:"閉じる",plan:"一緒に計画する",exp:"巡れる場所：",off:"25%オフ",fDay:"日付",fTime:"開始時間",eDate:"日付と開始時間を選んでください。",bkn:"赤い日付はすでに予約済みです。",ref:"参考",qrN:"インドネシアの銀行またはeウォレットのアプリでこのQRISをスキャンし、お好きな金額を入力してください。",chk:"料金と営業時間は目安で、変わることがあります。出発前に最新情報を確認します。"}
+};
+const IMG=["img/i00.jpg","img/i01.jpg","img/i02.jpg","img/i03.jpg","img/i04.jpg","img/i05.jpg","img/i06.jpg","img/i07.jpg","img/i08.jpg","img/i09.jpg","img/i10.jpg","img/i11.jpg","img/i12.jpg","img/i13.jpg","img/i14.jpg","img/i15.jpg","img/i16.jpg","img/i17.jpg","img/i18.jpg","img/i19.jpg","img/i20.jpg","img/i21.jpg","img/i22.jpg","img/i23.jpg","img/i24.jpg","img/i25.jpg","img/i26.jpg","img/i27.jpg","img/i28.jpg","img/i29.jpg","img/i30.jpg","img/i31.jpg","img/i32.jpg","img/i33.jpg","img/i34.jpg","img/i35.jpg","img/i36.jpg","img/i37.jpg","img/i38.jpg","img/i39.jpg","img/i40.jpg","img/i41.jpg","img/i42.jpg","img/i43.jpg","img/i44.jpg","img/i45.jpg","img/i46.jpg","img/i47.jpg","img/i48.jpg","img/i49.jpg","img/i50.jpg","img/i51.jpg","img/i52.jpg","img/i53.jpg","img/i54.png","img/i55.jpg"];
+const CITIES=[
+ {n:"Jakarta",c:"#2a1f6b",b:"The capital: old Dutch squares, green parks, creative hangouts and street food.",s:[
+  {i:0,n:"Tebet Eco Park",d:"One of the popular green spaces in South Jakarta: a big public park where locals walk, exercise, hang out or just relax, with lots of trees and open space. The Infinity Link Bridge is a highlight and a nice photo spot.",h:"Daily · Session 1: 06.00–11.00 · Session 2: 13.00–18.00",p:"FREE"},
+  {i:1,n:"Blok M",d:"One of the most popular areas in South Jakarta, mixing old-school Jakarta with the newer, trendy side of the city: local food, cafés, shopping, street food and hangouts for young locals. A lively, local side of Jakarta.",x:[["M Bloc Space","creative space, local brands, cafés and live music"],["Blok M Square","local shopping and street food"],["Little Tokyo","Japanese restaurants, bars and nightlife"],["Taman Literasi Martha Christina Tiahahu","a relaxing urban park"],["Gultik (Gulai Tikungan)","a famous local street-food spot"],["Pasar Santa","a local market with food, small businesses and unique shops"]]},
+  {i:2,n:"Kota Tua",d:"Jakarta's old historical district from the Dutch colonial period, with old colonial buildings and architecture. Walk around, take photos, visit museums and learn about the city's history. Fatahillah Square is where locals and tourists hang out, rent colorful bicycles and enjoy street food."},
+  {i:3,n:"Ancol, Dufan and Sea World",d:"Ancol is one of Jakarta's biggest recreational areas by the sea, with beaches, restaurants, parks and entertainment. Dufan (Dunia Fantasi) is its main amusement park, with rides from family-friendly to roller coasters. Sea World Ancol is an aquarium where you can see marine animals and learn about Indonesia's underwater world.",p:["Ancol: Rp35.000 (weekday and weekend)","Dufan: Rp275.000 weekday · Rp400.000 weekend","Sea World: from Rp120.000 weekday · from Rp165.000 weekend"]},
+  {i:4,n:"Taman Mini Indonesia Indah",d:"In East Jakarta, with miniature traditional houses, a flower garden, a dinosaur park, theaters and museums. Each attraction has its own ticket, so you can pick what suits your interests.",h:"06.00–22.00 WIB",p:"Entrance Rp25.000 per person"},
+  {i:5,n:"Monas (National Monument)",d:"One of Jakarta's main destinations and a symbol of the city. The 132 m monument remembers Indonesia's struggle for independence from Dutch colonial rule, and you can go up for a view over Jakarta.",h:"08.00–22.00 WIB",p:"Rp3.000–Rp24.000"}]},
+ {n:"Bogor",c:"#f08a4b",b:"The rain city: cooler air, a famous botanical garden, tea hills and Chinatown street food.",s:[
+  {i:6,n:"Kebun Raya Bogor",d:"One of the oldest botanical gardens in Asia, in the middle of the city, with tropical plants, giant trees and wide green space. You can rent a bicycle or electric scooter to get around. About 2 km from Bogor Station.",h:"Daily, about 08.00–16.00 (weekends may open earlier)",p:"From about Rp15.500 on weekdays · about Rp25.500 on weekends"},
+  {i:7,n:"Puncak Bogor",d:"The cool mountain road above Bogor, known for green tea fields, misty hills and viewpoints. A good way to escape the city heat, with hillside cafés for coffee and a view.",x:[["Humaira Coffee","a café stop in Puncak"],["Kembali Ke Alam Coffee","a café stop in Puncak"]]},
+  {i:8,n:"Jalan Suryakencana",d:"An old Chinatown street in Bogor and the city's best-known street for night food and snacks. Walk the street, try the stalls and see the old shops.",p:"Free to walk · food prices vary"}]},
+ {n:"Tangerang",c:"#2e9e6b",b:"Old Chinese-Indonesian heritage, street food and lakeside evenings, right next to Jakarta.",s:[
+  {i:9,n:"Pasar Lama (Old Market)",d:"The old market district of Tangerang, a center for local food and Chinese-Indonesian culture by the Cisadane River. Great for walking, night street food and photos.",p:"Free to walk · food prices vary"},
+  {i:10,n:"Museum Benteng Heritage",d:"The first museum in Indonesia about Chinese-Indonesian heritage, in a Peranakan Chinese building from 1684, one of the oldest in Tangerang. Collections, a beautiful courtyard and stories of the Cina Benteng community.",h:"Tuesday–Sunday, 10.00–17.00",p:"About Rp20.000–30.000 (tour guide may be included)"},
+  {i:11,n:"Angkringan Setu Cipondoh",d:"A relaxed lakeside evening spot in Tangerang, where people sit on mats at casual angkringan food stalls, eat, drink and chat by the water."}]}
+];
+const FOODS=[
+ {n:"",s:[["Nasi goreng","Indonesia's everyday fried rice.",[1]],["Bubur ayam","Rice porridge with shredded chicken, fried shallots and crackers, a classic breakfast.",[2]],["Bakso","Meatball soup, from street carts to restaurants.",[3]],["Rendang","Beef slow-cooked in coconut milk and spices.",[4]],["Soto Betawi","Jakarta-style beef soup in rich coconut milk.",[5]],["Gado-gado","Vegetables with peanut sauce.",[6]],["Sate ayam","Grilled chicken skewers with peanut sauce.",[7]],["Nasi uduk","Coconut rice, a classic Betawi breakfast.",[8]]]},
+ {n:"",s:[["Bakso","Meatball soup from a cart or small stall.",[3]],["Pecel lele","Fried catfish with sambal and fresh vegetables, served at roadside tents.",[9]],["Nasi goreng","Fried rice cooked fresh on a street cart, often with egg.",[1]],["Gultik","Gulai Tikungan: rice with a rich beef gulai broth, a famous street dish from Blok M.",[10]],["Angkringan","Javanese-style stalls where you pick small snacks, rice portions and hot drinks.",[11]],["Starling (Starbucks keliling)","Mobile coffee sellers on bicycles or motorbikes with sachet coffee, tea and snacks.",[12]],["Kerak telor","Betawi omelet of sticky rice and egg.",[13]],["Siomay and batagor","Fish dumplings with peanut sauce.",[14,15]],["Ketoprak","Rice cake, tofu and noodles in peanut sauce.",[16]],["Martabak","Thick stuffed pancake, savory or sweet.",[17]]]},
+ {n:"Trends change fast. I'll check what is hot the week you book.",s:[["Dubai chewy cookie","A chewy cookie filled with pistachio cream and crispy kataifi.",[18]],["Sushi salmon cream cheese","Sushi rolls with salmon and cream cheese.",[19]],["Som Tam","Spicy green papaya salad of Thai origin.",[20]],["Mie Gacoan","Spicy noodle chain loved by young Indonesians.",[21]],["Seblak","Spicy crackers in a hot broth.",[22]],["Croffle","Croissant waffle with sweet toppings.",[23]],["Es kopi susu","Iced coffee with milk and palm sugar.",[24]]]},
+ {n:"Tell me how hot you like it and I'll adjust.",s:[["Richeese Fire Chicken","Fried chicken with a fiery sauce and cheese.",[25]],["Buldak","Korean-style fire chicken or very spicy noodles.",[26]],["Ayam geprek","Crispy chicken crushed with fresh chili.",[27]],["Seblak","Spicy crackers in a hot broth.",[28]],["Rica-rica","Chicken or fish cooked in a fiery chili sauce.",[29]],["Sambal ijo","Green chili sambal served with nasi padang.",[30]]]},
+ {n:"",s:[["Pisang ijo","Makassar dessert: banana wrapped in green dough with coconut milk and syrup.",[31]],["Jus alpukat","Thick avocado juice, often with chocolate syrup.",[32]],["Es campur","Shaved ice with fruit, jelly and syrup.",[33]],["Es cendol","Green rice-flour jelly with coconut milk and palm sugar.",[34]],["Klepon","Rice balls filled with palm sugar.",[35]],["Pisang goreng","Fried banana, crunchy outside and sweet inside.",[36]],["Martabak manis","Thick sweet pancake with chocolate, cheese or peanuts.",[17]]]},
+ {n:"Tell me your area and budget. I'll take you where locals eat.",s:[["Warkop","Warung kopi: small coffee shops where locals drink coffee, chat and eat instant noodles or toast.",[37]],["Warteg","Simple Javanese canteens with many daily dishes.",[38]],["Family-run warung","Home-style rice stalls without English menus.",[39]],["Night food carts","Kaki lima carts that open after dark.",[40]],["Neighborhood bakso and soto stalls","Small stalls locals queue for.",[41,42]]]}
+];
+const FOODICO=["🍛","🍢","🔥","🌶","🍧","🏮"];
+const $=id=>document.getElementById(id);
+let lang="en";
+const t=k=>(L[lang]&&L[lang][k]!==undefined)?L[lang][k]:L.en[k];
+const wa=txt=>"https://wa.me/"+CONFIG.wa+"?text="+encodeURIComponent(txt);
+const mk=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+
+$("cWA").href=wa("Hi Imas, I'd like to ask about your local friend service.");
+$("cIG").href="https://www.instagram.com/"+CONFIG.ig+"/";
+$("cTG").href="https://t.me/"+CONFIG.tg;
+$("cMail").href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Local friend booking");
+$("ava").src=PHOTO;$("navAva").src=PHOTO;
+$("theme").onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()==="#12102a";r.setAttribute("data-theme",d?"light":"dark")};
+
+// dialogs
+const dlg=$("dlg");let dctx=null;
+function spotEl(it){
+ if(Array.isArray(it)){const r=mk("div","item");if(it[2]){const th=mk("div","thumbs");it[2].forEach(n=>{const im=mk("img","th");im.src=IMG[11+n];im.alt=it[0];im.loading="lazy";im.onclick=()=>{$("lbi").src=IMG[11+n];$("lbc").textContent=it[0];$("lb").showModal()};th.append(im)});r.append(th)}const tx=mk("div","itx");tx.append(mk("b","",it[0]),mk("span","",it[1]));r.append(tx);return r}
+ const r=mk("div","spot");
+ if(it.i!==undefined){const im=mk("img","sp");im.src=IMG[it.i];im.alt=it.n;im.loading="lazy";im.onclick=()=>{$("lbi").src=IMG[it.i];$("lbc").textContent=it.n;$("lb").showModal()};r.append(im)}
+ r.append(mk("b","",it.n),mk("p","",it.d));
+ if(it.h)r.append(mk("div","mi","🕒 "+it.h));
+ if(it.p){const m=mk("div","mi");[].concat(it.p).forEach((x,i)=>{if(i)m.append(document.createElement("br"));m.append(document.createTextNode((i?"":"🎟 ")+x))});r.append(m)}
+ if(it.x){r.append(mk("div","exp",t("exp")));const u=mk("ul","xl");it.x.forEach(([a,b])=>{const li=mk("li");li.append(mk("b","",a),document.createTextNode(" - "+b));u.append(li)});r.append(u)}
+ return r;
+}
+function openDlg(title,sub,items,ctx){
+ $("dT").textContent=title;$("dS").textContent=sub||"";$("dS").hidden=!sub;
+ const d=$("dL");d.replaceChildren();
+ items.forEach(it=>d.append(spotEl(it)));
+ if(ctx&&ctx.city)d.append(mk("p","note",t("chk")));
+ dctx=ctx;dlg.showModal();
+}
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+$("dx").onclick=()=>dlg.close();$("dx").setAttribute("title","Close");
+$("dGo").onclick=()=>{
+ if(dctx&&dctx.city){const c=document.querySelector('#areaOpts input[value="'+dctx.city+'"]');if(c)c.checked=true}
+ if(dctx&&dctx.food){const m=$("bm");if(!m.value.includes(dctx.food))m.value=(m.value?m.value+"\n":"")+"Food: "+dctx.food}
+ dlg.close();
+};
+$("lb").addEventListener("click",e=>{if(e.target===$("lb"))$("lb").close()});
+$("lbx").onclick=()=>$("lb").close();
+$("qi").src=IMG[11+43];document.documentElement.style.setProperty("--bgimg",'url("'+IMG[55]+'")');$("qd").addEventListener("click",e=>{if(e.target===$("qd"))$("qd").close()});$("qx").onclick=()=>$("qd").close();
+
+// renderers
+function renderCities(){
+ const g=$("cityGrid");g.replaceChildren();
+ CITIES.forEach(c=>{
+  const b=mk("button","glass tap city");b.type="button";
+  const dot=mk("div","dot",c.n.charAt(0));dot.style.background=c.c;
+  b.append(dot,mk("h3","",c.n),mk("small","",t("seePl")+" →"));
+  b.onclick=()=>openDlg(c.n,t("ref"),c.s,{city:c.n});
+  g.append(b);
+ });
+}
+function renderFood(){
+ const g=$("foodGrid");g.replaceChildren();
+ FOODS.forEach((f,i)=>{
+  const b=mk("button","glass tap fbtn",FOODICO[i]+"  "+t("fc")[i]);b.type="button";
+  b.onclick=()=>openDlg(t("fc")[i],f.n,f.s,{food:L.en.fc[i]});
+  g.append(b);
+ });
+}
+function renderRates(){
+ const g=$("rg");g.replaceChildren();
+ [2,4,6,8,12].forEach(h=>{const [o,n]=FEES[h];const c=mk("div","glass price");c.append(mk("span","",h+" "+t("hrs")),mk("s","was",usd(o)),mk("b","",usd(n)),mk("em","off",t("off")));g.append(c)});
+ const c=mk("button","glass price tap");c.type="button";c.onclick=()=>$("qd").showModal();c.append(mk("span","",t("pay")),mk("b","pw","♡"));g.append(c);
+}
+let OWNER=false,delArm=-1,delT=0;
+const capOf=it=>[it.n,it.c].filter(Boolean).join(", ");
+function renderGallery(){
+ const g=$("gal");g.replaceChildren();$("galE").hidden=GALLERY.length>0;g.hidden=!GALLERY.length;
+ GALLERY.forEach((it,i)=>{
+  const w=mk("div","tw"),b=mk("button","tile");b.type="button";
+  const im=mk("img");im.src=it.s;im.alt=capOf(it)?"Photo of "+capOf(it):"Gallery photo "+(i+1);b.append(im);
+  b.onclick=()=>{$("lbi").src=it.s;$("lbc").textContent=capOf(it);$("lb").showModal()};w.append(b);
+  if(OWNER){
+   const d=mk("button","del",delArm===i?"Yakin hapus?":"✕ Hapus");d.type="button";
+   d.onclick=()=>{if(delArm===i){publishGal(GALLERY.filter((_,k)=>k!==i))}else{delArm=i;renderGallery();clearTimeout(delT);delT=setTimeout(()=>{delArm=-1;renderGallery()},3000)}};w.append(d);
+   const row=mk("div","caprow"),a=mk("input"),c=mk("input");a.type=c.type="text";a.value=it.n||"";c.value=it.c||"";a.placeholder="Nama customer";c.placeholder="Negara";a.maxLength=c.maxLength=60;
+   a.setAttribute("aria-label","Nama customer foto "+(i+1));c.setAttribute("aria-label","Negara foto "+(i+1));
+   const sv=mk("button","capsave","Simpan");sv.type="button";
+   sv.onclick=()=>{publishGal(GALLERY.map((x,k)=>k===i?{s:x.s,n:a.value.trim(),c:c.value.trim()}:x))};
+   row.append(a,c,sv);w.append(row);
+  }else if(capOf(it)){w.append(mk("div","cap",capOf(it)))}
+  g.append(w);
+ });
+}
+function renderReviews(){
+ const rl=$("revList");rl.replaceChildren();$("revE").hidden=REVIEWS.length>0;
+ REVIEWS.forEach(r=>{
+  const d=mk("div","review"),ph=mk("div","ph");
+  if(r.photo){const i=mk("img");i.src=r.photo;i.alt="Photo from "+r.name;ph.append(i)}else ph.textContent=(r.name||"?").charAt(0);
+  const b=mk("div");
+  b.append(mk("div","stars","★".repeat(r.rating)+"☆".repeat(5-r.rating)),mk("b","",r.name+(r.country?", "+r.country:"")+(r.date?" · "+r.date:"")),mk("p","",r.text));
+  b.lastChild.style.margin="4px 0 0";d.append(ph,b);rl.append(d);
+ });
+}
+function applyLang(){
+ document.documentElement.lang=lang;
+ document.querySelectorAll("[data-i]").forEach(e=>e.textContent=t(e.dataset.i));
+ document.querySelectorAll("[data-ph]").forEach(e=>e.placeholder=t(e.dataset.ph));
+ document.querySelectorAll("[data-n]").forEach(e=>e.textContent=e.dataset.n+" "+t("hrs"));
+ document.querySelectorAll("[data-l]").forEach(e=>e.replaceChildren(...t(e.dataset.l).map(x=>mk("li","",x))));
+ $("dx").title=t("close");$("lbx").title=t("close");
+ renderCities();renderFood();renderRates();updatePay();renderCal();
+}
+$("lang").onchange=e=>{lang=e.target.value;applyLang()};
+
+// booking + payment reveal
+const durVal=()=>{const c=document.querySelector("input[name=dur]:checked");return c?c.value:""};
+function updatePay(){
+ const v=durVal();$("customBox").hidden=v!=="custom";
+ if(!v){$("payBox").hidden=true;return}
+ const fe=$("feeText");fe.replaceChildren();
+ if(v==="custom"){const a=Number($("ca").value);fe.textContent=a>0?t("pyFee")+": $"+a:t("pyAsk")}
+ else{const [o,n]=FEES[v];fe.append(document.createTextNode(t("pyFee")+": "+usd(n)+" · "+v+" "+t("hrs")+" "),mk("s","was",usd(o)),mk("em","off",t("off")))}
+ $("payBox").hidden=false;
+}
+document.querySelectorAll("input[name=dur]").forEach(r=>r.addEventListener("change",updatePay));
+$("ca").addEventListener("input",updatePay);
+$("sendBook").onclick=()=>{
+ const n=$("bn").value.trim(),c=$("bc").value.trim(),v=durVal(),s=$("bstat");
+ if(!n||!c){s.textContent=t("eName");return}
+ if(!selDate||!$("bt").value||BOOKED.includes(selDate)){s.textContent=t("eDate");return}
+ if(!v){s.textContent=t("eDur");return}
+ let fee;
+ if(v==="custom"){const a=Number($("ca").value);if(!(a>0)){s.textContent=t("eAmt");return}fee="Tip: $"+a}
+ else{const [o,nn]=FEES[v];fee=v+" hours ("+usd(nn)+", 25% off from "+usd(o)+")"}
+ const areas=[...document.querySelectorAll("#areaOpts input:checked")].map(x=>x.value).join(", ")||"Not chosen";
+ s.textContent="";
+ window.open(wa("Hi Imas! Booking request\nFull name: "+n+"\nCountry: "+c+"\nDate/time: "+(()=>{const [yy,mm,dd]=selDate.split("-").map(Number);return new Intl.DateTimeFormat("en",{weekday:"short",day:"numeric",month:"short",year:"numeric"}).format(new Date(yy,mm-1,dd))})()+", "+$("bt").value+"\nAreas: "+areas+"\nDuration/fee: "+fee+"\nNotes: "+$("bm").value+"\nWebsite language: "+$("lang").selectedOptions[0].text),"_blank","noopener");
+};
+
+// review form with one photo
+const fi=$("rp");
+function clearPhoto(){fi.value="";$("prev").style.display="none";$("rmPhoto").hidden=true}
+fi.onchange=()=>{
+ const f=fi.files[0];if(!f)return clearPhoto();
+ if(f.size>5*1024*1024){$("rstat").textContent=t("rBig");return clearPhoto()}
+ $("rstat").textContent="";$("prev").src=URL.createObjectURL(f);$("prev").style.display="block";$("rmPhoto").hidden=false;
+};
+$("rmPhoto").onclick=clearPhoto;
+$("sendRev").onclick=async()=>{
+ const n=$("rn").value.trim(),x=$("rt").value.trim(),s=$("rstat");
+ if(!n||!x){s.textContent=t("rErr");return}
+ const msg="Review for Imas\nName: "+n+"\nCountry: "+$("rc").value+"\nRating: "+$("rs").value+"/5\n"+x;
+ const f=fi.files[0];
+ try{if(f&&navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({text:msg,files:[f]});s.textContent=t("rSh");return}}catch(e){if(e.name==="AbortError")return}
+ window.open(wa(msg),"_blank","noopener");
+ s.textContent=f?t("rO1"):t("rO2");
+};
+
+const pad=n=>String(n).padStart(2,"0");
+const ymd=(y,m,d)=>y+"-"+pad(m+1)+"-"+pad(d);
+const LOC={en:"en",id:"id",es:"es",zh:"zh-CN",ko:"ko",ja:"ja"};
+let calY,calM,selDate="",calEdit=null;
+(function(){const bt=$("bt");bt.append(new Option("—",""));for(let h=6;h<=20;h++)for(const m of [0,30]){if(h===20&&m)continue;const v=pad(h)+":"+pad(m);bt.append(new Option(v,v))}})();
+function renderCal(){
+ const box=$("cal");box.replaceChildren();
+ const loc=LOC[lang]||"en",now=new Date(),ty=now.getFullYear(),tm=now.getMonth(),td=now.getDate();
+ if(calY===undefined){calY=ty;calM=tm}
+ const head=mk("div","calhead"),prev=mk("button","calnav","‹"),next=mk("button","calnav","›");
+ prev.type=next.type="button";prev.setAttribute("aria-label","Previous month");next.setAttribute("aria-label","Next month");
+ prev.disabled=(calY===ty&&calM===tm);
+ prev.onclick=()=>{calM--;if(calM<0){calM=11;calY--}renderCal()};
+ next.onclick=()=>{calM++;if(calM>11){calM=0;calY++}renderCal()};
+ head.append(prev,mk("b","",new Intl.DateTimeFormat(loc,{month:"long",year:"numeric"}).format(new Date(calY,calM,1))),next);
+ box.append(head);
+ const grid=mk("div","calgrid");
+ for(let i=0;i<7;i++)grid.append(mk("span","calwd",new Intl.DateTimeFormat(loc,{weekday:"short"}).format(new Date(2024,0,1+i))));
+ const first=(new Date(calY,calM,1).getDay()+6)%7;
+ for(let i=0;i<first;i++)grid.append(mk("span","calx"));
+ const days=new Date(calY,calM+1,0).getDate(),set=calEdit||new Set(BOOKED);
+ for(let d=1;d<=days;d++){
+  const key=ymd(calY,calM,d),past=calY<ty||(calY===ty&&(calM<tm||(calM===tm&&d<td))),bk=set.has(key);
+  const b=mk("button","calday",String(d));b.type="button";
+  if(bk)b.classList.add("bk");
+  if(key===selDate&&!calEdit)b.classList.add("sel");
+  b.disabled=past||(bk&&!calEdit);
+  b.setAttribute("aria-label",key+(bk?" booked":""));
+  b.onclick=()=>{
+   if(calEdit){if(calEdit.has(key))calEdit.delete(key);else calEdit.add(key);renderCal()}
+   else{selDate=key;renderCal()}
+  };
+  grid.append(b);
+ }
+ box.append(grid);
+ let note=t("bkn");
+ if(selDate&&!calEdit){const [yy,mm,dd]=selDate.split("-").map(Number);note=new Intl.DateTimeFormat(loc,{dateStyle:"full"}).format(new Date(yy,mm-1,dd))+" · "+note}
+ $("calNote").textContent=note;
+}
+function updateCalAdmin(){
+ const on=!!calEdit;$("calMode").textContent=on?"Batal":"Atur tanggal penuh";$("calSave").hidden=!on;
+ $("calAdminNote").textContent=on?"Klik tanggal untuk menandai penuh (merah) atau membukanya lagi, lalu tekan Simpan.":"";
+}
+$("calMode").onclick=()=>{calEdit=calEdit?null:new Set(BOOKED);updateCalAdmin();renderCal()};
+$("calSave").onclick=()=>{const list=[...calEdit].sort();calEdit=null;updateCalAdmin();publishGal(GALLERY,list,$("calAdminNote"))};
+renderGallery();renderReviews();applyLang();
+// ===== admin (GitHub) =====
+const LS="imfoo_admin";
+const lsGet=()=>{try{return JSON.parse(localStorage.getItem(LS)||"null")}catch(e){return null}};
+const lsSet=v=>{try{localStorage.setItem(LS,JSON.stringify(v))}catch(e){}};
+const lsDel=()=>{try{localStorage.removeItem(LS)}catch(e){}};
+const b64=s=>btoa(unescape(encodeURIComponent(s)));
+const unb64=s=>decodeURIComponent(escape(atob(s.replace(/\s/g,""))));
+async function gh(method,path,body){
+ const c=lsGet();if(!c)throw new Error("login");
+ const url="https://api.github.com/repos/"+c.repo+"/contents/"+path+(method==="GET"?"?ref="+encodeURIComponent(c.branch||"main"):"");
+ const r=await fetch(url,{method,headers:{Authorization:"Bearer "+c.token,Accept:"application/vnd.github+json","Content-Type":"application/json"},body:body?JSON.stringify(Object.assign({branch:c.branch||"main"},body)):undefined,cache:"no-store"});
+ if(r.status===404&&method==="GET")return null;
+ if(!r.ok){const e=new Error("gh "+r.status);e.status=r.status;throw e}
+ return r.json();
+}
+const normG=x=>typeof x==="string"?{s:x,n:"",c:""}:{s:x.s,n:x.n||"",c:x.c||""};
+function applyState(st){GALLERY=(st.gallery||[]).map(normG);BOOKED=(st.booked||[]).filter(x=>typeof x==="string");renderGallery();renderCal()}
+async function loadState(){try{const r=await fetch("data/state.json?"+Date.now(),{cache:"no-store"});if(r.ok)applyState(await r.json())}catch(e){}}
+async function remoteState(){const f=await gh("GET","data/state.json");if(!f)return{sha:null,state:{gallery:[],booked:[]}};return{sha:f.sha,state:JSON.parse(unb64(f.content))}}
+async function publishGal(next,booked,stEl){
+ const st=stEl||$("galStat");
+ try{
+  st.textContent="Menyimpan...";
+  const out=[];
+  for(const it of next){
+   if(it.s.indexOf("data:")===0){
+    const path="img/gallery/"+Date.now().toString(36)+Math.random().toString(36).slice(2,6)+".jpg";
+    await gh("PUT",path,{message:"Add gallery photo",content:it.s.split(",")[1]});
+    out.push({s:path,n:it.n,c:it.c});
+   }else out.push({s:it.s,n:it.n,c:it.c});
+  }
+  const nb=booked===undefined?BOOKED:booked;
+  for(let tries=0;tries<2;tries++){
+   const rem=await remoteState();
+   try{await gh("PUT","data/state.json",{message:"Update site data",content:b64(JSON.stringify({gallery:out,booked:nb},null,1)),sha:rem.sha||undefined});break}
+   catch(e){if(e.status===409&&tries===0)continue;throw e}
+  }
+  applyState({gallery:out,booked:nb});
+  st.textContent="Tersimpan. Situs publik ikut berubah dalam sekitar 1 menit.";
+ }catch(err){
+  const s=err&&err.status;
+  st.textContent=s===401?"Token ditolak. Masuk lagi lewat Admin.":(s===403||s===404)?"Ditolak. Cek nama repository, branch, dan izin token (Contents: Read and write).":"Gagal menyimpan. Coba lagi sebentar lagi."
+ }
+}
+function shrink(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file),im=new Image();im.onload=()=>{const k=Math.min(1,1200/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);res(c.toDataURL("image/jpeg",0.78))};im.onerror=()=>rej(new Error("bad image"));im.src=u})}
+$("galBtn").onclick=()=>$("galIn").click();
+let staged=[];
+$("galIn").onchange=async e=>{
+ const files=[...e.target.files];e.target.value="";if(!files.length)return;
+ const st=$("galStat");st.textContent="Memproses foto...";
+ try{
+  staged=[];for(const f of files)staged.push({s:await shrink(f),n:"",c:""});
+  const list=$("stageList");list.replaceChildren();
+  staged.forEach((it,i)=>{
+   const r=mk("div","stagerow"),im=mk("img"),box=mk("div","stagein"),a=mk("input"),b=mk("input");im.src=it.s;im.alt="";
+   a.type=b.type="text";a.placeholder="Nama customer";b.placeholder="Negara";a.maxLength=b.maxLength=60;
+   a.setAttribute("aria-label","Nama customer foto "+(i+1));b.setAttribute("aria-label","Negara foto "+(i+1));
+   a.oninput=()=>{it.n=a.value};b.oninput=()=>{it.c=b.value};
+   box.append(a,b);r.append(im,box);list.append(r);
+  });
+  $("galStage").hidden=false;st.textContent="";
+ }catch(err){st.textContent="Foto tidak bisa dibaca. Coba foto lain."}
+};
+$("stageCancel").onclick=()=>{staged=[];$("galStage").hidden=true};
+$("stageSave").onclick=()=>{const add=staged.map(x=>({s:x.s,n:x.n.trim(),c:x.c.trim()}));$("galStage").hidden=true;staged=[];publishGal(GALLERY.concat(add))};
+async function adminInit(){
+ if(!lsGet())return;
+ try{
+  const rem=await remoteState();applyState(rem.state);
+  OWNER=true;$("galAdmin").hidden=false;$("calAdmin").hidden=false;$("adOut").hidden=false;renderGallery();
+ }catch(e){if(e&&(e.status===401||e.status===403))lsDel()}
+}
+$("adminLink").onclick=e=>{e.preventDefault();const c=lsGet();if(c){$("adRepo").value=c.repo;$("adBr").value=c.branch||"main"}$("ad").showModal()};
+$("adx").onclick=()=>$("ad").close();
+$("ad").addEventListener("click",e=>{if(e.target===$("ad"))$("ad").close()});
+$("adOk").onclick=async()=>{
+ const repo=$("adRepo").value.trim(),branch=$("adBr").value.trim()||"main",token=$("adTok").value.trim(),s=$("adStat");
+ if(!/^[\w.-]+\/[\w.-]+$/.test(repo)||!token){s.textContent="Isi repository (pemilik/nama-repo) dan token.";return}
+ s.textContent="Memeriksa...";
+ try{
+  const r=await fetch("https://api.github.com/repos/"+repo,{headers:{Authorization:"Bearer "+token,Accept:"application/vnd.github+json"}});
+  if(!r.ok){s.textContent=r.status===404?"Repository tidak ditemukan. Cek nama dan akses token.":"Token ditolak.";return}
+  lsSet({repo,branch,token});$("adTok").value="";s.textContent="";$("ad").close();await adminInit();
+ }catch(e){s.textContent="Tidak bisa terhubung ke GitHub."}
+};
+$("adOut").onclick=()=>{lsDel();location.reload()};
+loadState().then(adminInit);
+</script>
+</body>
+</html>
